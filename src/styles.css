@@ -1,0 +1,102 @@
+body {
+  background: #69ba97;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1.6em;
+}
+
+#answer-word {
+  font-family: Montserrat;
+  font-size: 25px;
+}
+
+#answer-word ul {
+  padding: 10px;
+  text-align: center;
+  text-decoration: strong;
+  display: inline-block;
+  border-radius: 8px;
+  margin: 4px 4px;
+  font-size: 1.6rem;
+}
+
+#mylives {
+  color: #ead2d5;
+}
+
+#wrong-letters {
+  color: #ead2d5;
+}
+
+h1 {
+  font-family: Pacifico;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 35px;
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 25px;
+}
+
+button {
+  background-color: #539176;
+  font-family: Montserrat;
+  color: white;
+  border: #fff 2px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: strong;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  margin: 4px 4px;
+}
+
+button:hover {
+  background-color: #ead2d5;
+  color: #539176;
+}
+
+button:disabled {
+  background: grey;
+  color: #ead2d5;
+}
+
+button:focus {
+  background: grey;
+  color: #ead2d5;
+}
+
+canvas {
+  color: #fff;
+  border: #fff dashed 2px;
+  padding: 20px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+    padding: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #alphabet {
+    padding: 0 0 0 25px;
+  }
+}

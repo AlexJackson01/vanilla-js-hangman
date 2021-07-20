@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <br />
+          <h1>Hangman</h1>
+          <br />
+          <h2>Vanilla JavaScript Hangman Game</h2>
+        </header>
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <p>
+          Use the alphabet below to guess the word, or click hint to get a clue.
+        </p>
+        <br />
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <canvas id="stickman"
+          >This Text will show if the Browser does NOT support HTML5 Canvas
+          tag</canvas
+        ><br /><br /><br />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="answer-word"></div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="win"></div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <p id="clue"></p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div id="buttons"></div>
+      </div>
+      <br />
+      <div id="letters"></div>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <p>Lives remaining:</p>
+          <p id="mylives"></p>
+        </div>
+        <br />
+        <div class="col-xs-12 col-md-6">
+          <p>Wrong letters selected:</p>
+          <p id="wrong-letters"></p>
+        </div>
+      </div>
+      <br />
+      <div class="row"></div>
+
+      <div class="container">
+        <button type="button" class="button2" id="hint">Hint</button>
+        <button type="button" class="button2" id="reset">
+          New Game
+        </button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+    <script src="src/sandbox.js"></script>
+  </body>
+</html>
